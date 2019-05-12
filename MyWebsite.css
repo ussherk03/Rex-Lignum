@@ -1,0 +1,177 @@
+body{
+    background-color: gray;
+    color:black;
+    width:auto;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 5px;
+
+}
+
+.div-1{
+    font-family: Book Antiqua, serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    padding-top:10px;
+    border-bottom: black solid;
+    border-radius: 10px;
+    background-color:orange;
+    color: black;
+    text-decoration: underline;
+    letter-spacing: 5.5px;
+}
+.span{
+    background-color: black;
+    color:white;
+    border: 1.5px green solid;
+    border-radius: 10px;
+    padding-top: 0.5px;
+    padding-bottom: 0.5px;
+}
+
+.list label, li{
+    background-color:none;
+    font-weight: bolder;
+    list-style: none;
+    font-family: Book Antiqua, serif;
+    font-size:19px;
+    display: inline-block;
+    padding:10px;
+    color: green;
+}
+
+.span input{
+    font-size
+}
+
+
+.header{
+    background-color: none;
+    width: auto;
+}
+
+a:hover{
+    color:orange;
+}
+
+a:active{
+    color:red;
+}
+
+a{
+    color:green;
+    text-decoration: none;
+    padding-left: 20px;
+
+}
+
+.parag-1{
+    font-family: Book Antiqua, serif;
+    line-height: 1.5em;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: black;
+    color:orange;
+    border:2px #555 solid;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.parag-1{
+    font-family: Book Antiqua, serif;
+    line-height: 1.5em;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: black;
+    color:orange;
+    border:2px #555 solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.parag-2{
+    font-family: Book Antiqua, serif;
+    line-height: 1.5em;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: black;
+    color: orange;
+    border: 2px #555 solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.parag-3{
+    font-family: Book Antiqua, serif;
+    line-height: 1.5em;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: black;
+    color:orange;
+    border: 2px #555 solid;
+    border-radius: 10px;
+    padding:10px;
+}
+
+.parag-3{
+    font-family: Book Antiqua, serif;
+    line-height: 1.5em;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: black;
+    color:orange;
+    border: 2px #555 solid;
+    border-radius: 10px;
+    padding:10px;
+}
+
+.parag-4{
+    font-family: Book Antiqua, serif;
+    line-height: 1.5em;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: black;
+    color:orange;
+    border: 2px #555 solid;
+    border-radius: 10px;
+    padding:10px;
+}
+
+.parag-5{
+    font-family: Book Antiqua, serif;
+    line-height: 1.5em;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: black;
+    color:orange;
+    border: 2px #555 solid;
+    border-radius: 10px;
+    padding:10px;
+}
+
+.parag-6{
+    font-family: Book Antiqua, serif;
+    line-height: 1.5em;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: black;
+    color:orange;
+    border: 2px #555 solid;
+    border-radius: 10px;
+    padding:10px;
+}
+
+
+}
+
+#side_img2{
+    float:right;
+    box-sizing: border-box;
+}
+
+#div-6{
+    float:left;
+    box-sizing: border-box;
+}
