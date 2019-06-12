@@ -1,0 +1,276 @@
+@media(min-width:768px){
+	.box{
+		display:flex;
+	    /*flex-direction:row;    #In cases where you want make the webpage adaptive and effective
+	    align-items:center;      #for smaller screen widths like those of tablets, smartphones, e.t.c
+	                             #it would be best to comment flex features out, bar "display:".
+	    */    
+	}
+
+	.real_form{
+		display:flex;
+		/*flex-direction:row;
+		justify-content:none;*/
+	}
+
+	.buttons{
+		display:flex;
+		/*flex-direction:wrap;*/
+		justify-content:space-between;
+		/*padding:6px;
+		font-size:30px;*/
+	}
+
+	.footer .frame4{
+		display:flex;
+		flex-direction:row;
+		color: white;
+		justify-content: space-between;
+		padding:20px;
+	}
+
+	.copyright{
+	    display:flex;
+        justify-content:center;
+	    /*margin-left:30em;*/
+	    color:turquoise;
+    }
+}
+
+
+
+body{
+   background-image:url('../PROJECT FORMS/That Kube.jpg');
+   margin:auto;
+}
+
+
+.frame1{
+	/*border:1px black solid;*/
+	background-image: url('../PROJECT FORMS/YouKnowIt.jpg');
+	background-position:center;
+    
+}
+
+.head{
+    flex:1;
+	order:1;
+	font-size: 30px;
+	font-family: Book Antiqua, serif;
+	font-weight: bolder;
+    color:crimson;
+	margin:0px;
+	padding-left: 19px;
+}
+
+.navbar{
+	flex:4;
+    order:2;
+	padding-left: 1em;
+}
+
+.list1 li{
+	/*margin-right:20px;*/
+	margin-top:2em;
+	padding-right:2em;
+	padding-bottom:2em;
+	display:inline-block;
+	list-style: none;
+	font-family:Arial, Helvetica, serif;
+	font-weight: bold;
+	font-size:25px;
+}
+
+a{
+    text-decoration: none; 
+    color:azure;
+	padding:15px;
+	background-color:crimson;
+	border-radius:10px;
+	border:1px black solid;
+	margin-bottom:5px;
+}
+
+a:hover{
+	color:cyan;
+	background-color:crimson;
+	border:1px black solid;
+	border-radius:10.9px;
+}
+
+.fill_out h1{
+    color:turquoise;
+	text-align:center;
+	font-weight:bold;
+	font-family:Book Antiqua, serif;
+	font-size: 60px;
+    padding-right:70px;
+}
+
+.original{
+	font-family: Arial, Helvetica,serif;
+	font-size: 23px;
+	border:none;
+	border-radius:none;
+	text-decoration:none;
+	padding:none;
+	color:turquoise;
+	background:none;
+}
+
+.original:hover{
+	border: none;
+	border-radius:none;
+    padding:none;
+    color:green;
+	background:none;
+}
+
+.bttn{
+	font-family: Book Antiqua,serif;
+	font-size: 20px;
+	border:2px black solid;
+	border-radius:3px;
+	text-decoration:underline;
+	padding:3px;
+	color:azure;
+	background:green;
+}
+
+.download-bttn:hover{
+	font-family: Book Antiqua,serif;
+	font-size: 20px;
+	border:2px black solid;
+	border-radius:3px;
+	text-decoration:underline;
+	padding:3px;
+	color:azure;
+	background:green;
+}
+
+.frame2{
+	order:2;
+	flex:1;
+	border:none;
+	padding:5px;
+	font-family:Book Antiqua,serif;
+	font-size: 30px;
+	font-weight: bolder;
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+
+.frame2 p{
+	font-size: 45px;
+	line-height:1.6em;
+	font-family: Book Antiqua, serif;
+	color:rgb(0,255,0);
+}
+
+.frame3{
+	order:1;
+	flex:1;
+	border:none;
+	margin:0px;
+	/*background-image:url('../HTML&CSS/IMAGES/Transparent.jpeg');*/
+}
+
+.frame2{
+	font-family: Book Antiqua;
+	font-size: 40px;
+	font-weight: bolder;
+	text-align:none;
+	color:turquoise;
+	padding:15px;
+}
+
+.fill_out label{
+	display:block;
+	font-family: Book Antiqua, serif;
+	font-size:23px;
+	font-weight:bold;
+	padding:2.0px;
+	color:turquoise;
+}
+
+.list{
+	width:100%;
+}
+
+.li{
+	list-style: none;
+	display: block;
+	padding: 10px;
+}
+
+.li input{
+	color: currentColor;
+	padding-right:70px;
+	padding:10px;
+	font-size:20px;
+	background-color:white;
+}
+
+.li input[type="input"], input[type="email"], input[type="password"]{
+	padding-right: 70px;
+}
+
+.Submit{
+	background:turquoise;
+	padding: 10px;
+	text-align:center;
+}
+
+.li .submit-button{
+	background:turquoise;
+	padding: 10px;
+	text-align:center;
+}
+
+.terms{
+	color:azure;
+	font-size: 23px;
+	font-family: Arial, Helvetica, serif;
+	padding:2px;
+}
+
+.x1{
+	color:white;
+	background-color:black;
+	/*border:1.8px black solid;*/
+	padding:15px;
+	flex-basis:28%;
+	margin-top: 10px;
+	width:100%;
+}
+
+.x1 h1{
+	color:crimson;
+	text-decoration:underline;
+}
+
+.mail{
+	display:block;
+	justify-content:space-between;
+}
+
+.mail input[type="email"]{
+	font-size:17px;
+}
+
+.mail div{
+	padding:5px;
+}
+
+.mail input[type="submit"]{
+	padding:3.3px;
+	margin-left:10em;
+}
+
+.copyright{
+	    justify-content:center;
+	    color:azure;
+    }
+
+
