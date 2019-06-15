@@ -1,0 +1,53 @@
+a{
+	color:black;   
+}
+
+body{
+	color:black;
+	background:url('../Project ARTIKEL/Riverbank.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position: all;
+	background-attachment:fixed;
+	margin:auto; 
+	width:80%;
+	line-height:1.8em;
+	font-family:Luminari, serif;
+
+}
+
+body h1:first-child{
+	font-size:50px;
+	font-weight:bold;
+	font-family:Book Antiqua, serif;
+	border-bottom: 2.5px black solid;
+	padding-bottom: 5px;
+}
+
+header p{
+	font-weight: bold;
+	font-size:18px;
+	border:0.3px currentColor solid;
+	padding:2px;
+	background-color: rgb(175,95,0,.3);
+}
+
+
+p{
+	font-weight:bold;  
+	font-size: 18px;
+	padding:2px;
+	background-color: rgb(175,95,0,.3);
+}
+
+a:hover{
+	color:black;
+}
+
+
+
+@media screen and (max-width:1067px){
+	body > h1{
+		line-height:1.2em;
+	}
+}
