@@ -1,0 +1,118 @@
+#body{
+	background-image:url('../IMAGES/services.jpg');
+	width:100%;
+}
+#form{
+    text-align: center;
+}
+
+#list{
+	text-align: center;
+}
+
+#sociale{
+	color:white;
+	font-size: 20px;
+	text-align: center;
+}
+
+#sociale a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 5px;
+    height:40px;
+    width:40px;
+    border-radius:50%;
+    border:none;
+    background-color: #332;
+    text-decoration: none;
+    color:crimson;
+}
+
+#sociale a:hover{
+	color:dodgerblue;
+	background-color: white;
+	border:none;
+}
+
+
+
+
+#log_in{
+	text-align: center;
+	font-family: Book Antiqua, serif;
+	border-radius:29px;
+	padding:9px;
+	background-color:dodgerblue;
+	outline:none;
+	border:none;
+	cursor:pointer;
+}
+
+#log_in:hover{
+	color:black;
+	background:palegreen;
+}
+
+#log_in a{
+	text-decoration: none;
+	color:black;
+	font-size:23px;
+	font-weight: bold;
+}
+
+#log_in a:hover{
+	color:black;
+}
+
+
+.alts{
+	color:gray;
+	text-decoration: none;
+}
+
+.alts:hover{
+	color:palegreen;
+	text-decoration: underline;
+}
+
+strong{
+    color:white;
+}
+
+#footer{
+  /*  width:100%;*/
+    background-image: url('../IMAGES/Fedora.jpg');
+    opacity: 0.9;
+}
+
+/* Media Queries */
+
+@media (max-width: 1000px){
+	#picture{
+		height:14vh;
+	}
+}
+
+@media (max-width:700px){
+	#picture{
+		height:15vh;
+	}
+}
+
+@media (max-width:550px){
+	#picture{
+		height:13vh;
+	}
+
+}
+
+@media (max-width:500px){
+    #picture{
+    	height:13vh;
+    }
+}
+
+
+/* Media Queries */

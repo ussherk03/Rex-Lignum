@@ -1,0 +1,397 @@
+
+body{
+	margin:0;
+	width:100%;
+	background-image: url('../IMAGES/Girl with Mac.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+/* Navigation Bar */
+/* Navigation Bar */
+#nav{
+	background-image: url('../IMAGES/That Kube.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position:top center;
+	position: fixed;
+	z-index: 1;
+	width:100%;
+}
+
+#lnks{
+	display:flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+}
+
+#lnks li{
+	list-style: none;
+	font-family:Courier;
+	font-size: 23px;
+	font-weight: bolder;
+	margin-left: 6em;
+}
+
+.link{
+	position: relative;
+	text-decoration: none;
+	color:white;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+.link:hover{
+    color:dodgerblue;
+}
+
+.link::before{
+	position: absolute;
+	width:100%;
+	content:'';
+	background-color:black;
+	height:2px;
+	top:0;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition:all 0.5s;
+}
+
+.link::after{
+	position: absolute;
+	width:100%;
+	content: '';
+	background-color:crimson;
+	height:2px;
+	bottom:0;
+	left:2px;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: all 0.5s;
+}
+
+.link:hover::before, .link:hover::after{
+    transform:scaleX(1);
+}
+
+/* Navigation Bar */
+/* Navigation Bar */
+
+
+#picture{
+	height:6vh;
+}
+
+
+
+#container{
+	margin:auto;
+	width:85%;
+	background-color:white;
+}
+
+/* Main */
+/* Main */
+
+#main{
+    background-color: white;
+    padding:3em;
+}
+
+/* Main */
+/* Main */
+
+
+
+/* Box */
+/* Box */
+.pix{
+	display:grid;
+	grid-template-columns:repeat(3, 1fr);
+}
+
+.pix img{
+	width: 100%;
+	transition:0.9s;
+}
+
+.pix img:hover{
+    transform: translateY(-3px);
+}
+
+.box{
+	text-align: center;
+}
+
+.box h1{
+	font-size:54px;
+	font-weight:bolder;
+	font-family: Brush Script MT;
+}
+
+.box h1 span{
+	color:crimson;
+	padding:3px;
+	border:1px black solid;
+	border-top-right-radius:40px;
+	border-bottom-right-radius:40px;
+	border:none;
+	background-color:black;
+}
+
+#xplore{
+	padding:12px;
+	margin:6px;
+	font-family: Book Antiqua, serif;
+	font-weight: bold;
+	font-size: 23px;
+	border:none;
+	background-color:rgb(249, 40, 0);
+	cursor:pointer;
+}
+
+#xplore a{
+	text-decoration: none;
+	color:white;
+}
+
+#xplore:hover{
+	background-color:red;
+}
+
+/* Box */
+/* Box */
+
+
+
+/* Help */
+/* Help */
+
+#Help{
+	text-align: center;  
+	background-color:#363958;
+	padding-bottom: 3px;
+}
+
+#Help h1{
+	font-family: Book Antiqua, serif;
+}
+
+
+#sign_up{
+	padding:12px;
+	margin-bottom:9px;
+	font-family: Book Antiqua, serif;
+	font-weight: bold;
+	font-size: 23px;
+	border-radius:9px;
+	border:none;
+	background-color:rgb(0,100,100);
+	cursor:pointer;
+	outline: none;
+}
+
+#sign_up a{
+	text-decoration: none;
+	color:white;
+}
+
+#sign_up:hover{
+	background-color:rgb(0, 140, 100);
+}
+
+
+
+.preamble img{
+	width:100%;
+	margin-bottom: 6px;
+}
+
+#preamble___{
+	display: grid;
+    grid-template-columns:repeat(4, 1fr);
+}
+
+
+#preamble___ img{
+	width:100%;
+	margin-bottom: 6px;
+}
+
+/* Help */
+/* Help */
+
+
+
+/* Tutorials */
+/* Tutorials */
+
+#tutorials{
+	text-align: center;
+	background-color: white;
+}
+
+#others{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap:3px;
+	padding-left:3px;
+	padding-right:3px;
+	background:-webkit-linear-gradient(310deg, white 50%, #e44d26 50%, #2062af 30%);
+}
+
+.ico1{
+    margin:6px;
+}
+
+/* Tutorials */
+/* Tutorials */
+
+
+/* Footer */
+/* Footer */
+
+#footer{
+    text-align: left;
+    background-image:url('../IMAGES/Fedora.jpg');
+    background-attachment: fixed;
+}
+
+.info{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.info li{
+	list-style: none;
+}
+
+.info li a{
+    text-decoration: none;
+    font-family: Book Antiqua, serif;
+    color:white;
+    font-weight: bolder;
+}
+
+.info li a:hover{
+    text-decoration: underline;
+}
+
+/* Footer */
+/* Footer */
+
+/* Media Queries */
+/* Media Queries */
+/* Media Queries */
+
+
+@media (max-width:860px){
+	#lnks li{
+		margin-right: 0.03px;
+		font-size: 18px;
+	}
+
+	#others{
+		display: grid;
+		grid-template-columns:repeat(1, 1fr);
+		grid-gap:3px;
+	    padding-left:3px;
+		padding-right:3px;
+		background:-webkit-linear-gradient(310deg, white 50%, #e44d26 50%, #2062af 30%);
+	}
+}
+
+@media (max-width: 715px){
+	#lnks{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap:0;
+		padding-right:60em;
+	}
+
+	#lnks li{
+		list-style: none;
+		font-family:Courier;
+		font-size: 20px;
+		font-weight: bolder;
+		margin-left: 4em;
+	}
+
+	.box h1{
+		font-size:24px;
+		font-weight:bolder;
+		font-family: Brush Script MT;
+	}
+
+	.ico1 img, .ico2 img, .ico3 img{
+		width:30%;
+	}
+}
+
+@media (max-width:700px){
+    #lnks li{
+    	margin-left:3em;
+    }
+
+    #preamble___{
+		display: grid;
+	    grid-template-columns:repeat(2, 1fr);
+	}
+}
+
+@media (max-width:570px){
+	#lnks li{
+		margin-left:2em;
+	}
+
+	#container{
+		width:100%;
+	}
+
+	.pix{
+		display:grid;
+		grid-template-columns:repeat(2, 1fr);
+	}
+
+	.box{
+		width:100%;
+	}
+
+    #Help{
+       width: 100%
+    }
+
+	#xplore{
+       padding:10px;
+       font-size:18px;
+	}
+
+	#sign_up{
+       font-size:18px;
+       padding:9px;
+	}
+
+	#preamble___{
+		display: grid;
+	    grid-template-columns:repeat(2, 1fr);
+	}
+
+    .info{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (max-width:500px){
+	#preamble___{
+		display: grid;
+	    grid-template-columns:repeat(2, 1fr);
+	}
+}
+/* Media Queries */
+/* Media Queries */
+/* Media Queries */
+
+
+

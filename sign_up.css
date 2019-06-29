@@ -1,0 +1,119 @@
+
+#body_form{
+    background-image:url('../IMAGES/YouKnowIt.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width:100%;
+}
+
+.box h1{
+	color:white;
+}
+
+#form{
+	margin:auto;
+	width:360px;
+	margin-top:50px;
+	border:1px black solid;
+	background-color:rgba(0, 0, 0, 0.75);
+}
+
+#user{
+	font-size:6em;
+	text-align:center;
+	color:dodgerblue;
+}
+
+#social{
+	text-align: center;
+}
+
+#social a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    border:none;
+    text-decoration: none;
+    color:/*#ffb41a*/ white;
+    background:#ffb41a;
+}
+
+#social a:hover{
+	color:white;
+	background-color:dodgerblue;
+	border:none;
+}
+
+#form #list{
+	margin:40px;
+}
+
+#list input[type="text"], input[type="password"]{
+    paddding-right:50px;
+    padding-bottom: 9px;
+    background:transparent;
+    color:white;
+    font-size: 17px;
+    border:none;
+    outline:none;
+    border-bottom:1.5px dodgerblue solid;
+}
+
+#form li{
+	list-style: none;
+}
+
+#DOB{
+	font-family:Brush Script MT;
+	font-size: 19px;
+	color:white;
+}
+
+#select1, #select2, #select3{
+	font-family: Book Antiqua, serif;
+	font-weight: bold;
+}
+.radio-button{
+	color:white;
+}
+
+.checkbox{
+	color:dodgerblue;
+}
+
+.checkbox a{
+	color:crimson;
+	text-decoration:none;
+}
+
+.checkbox a:hover{
+	color:palegreen;
+	text-decoration: underline;
+}
+
+
+#register{
+	width:100%;
+	padding:15px;
+	background-color: dodgerblue;
+	border:none;
+	cursor: pointer;
+}
+
+#register:hover{
+	background-color:rgb(0,100, 249);
+}
+
+#register a{
+    text-decoration: none;
+    font-family: Book Antiqua, serif;
+    font-size:21px;
+    font-weight:bolder;
+    outline:none;
+    color:white;
+}
+
