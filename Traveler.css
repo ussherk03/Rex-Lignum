@@ -17,9 +17,11 @@ body{
 .break2{
 	position: relative;
 	z-index: 1; 
-	height: 9px; 
+	height: 3px; 
 	background-color:red;
 	margin:auto;
+	width:85%;
+	top:10px;
 }
 
 
@@ -30,7 +32,7 @@ body{
 .main-nav{
 	display: inline-block;
 	position:fixed;
-	z-index:2;
+	z-index:3;
 	width:100%;
 }
 
@@ -39,7 +41,7 @@ body{
 	width:100%;
 	display: flex;
 	flex-direction: row;
-	background: gray;
+	background:#d3d3d3;
 	justify-content: flex-end;
 }
 
@@ -64,7 +66,7 @@ body{
 
 #list1 a:hover{
 	color:#fff;
-	transition: 0.5s;
+	transition: 0.1s;
 }
 
 #nav2{
@@ -349,6 +351,7 @@ img{
 	border-bottom-right-radius: 14px;
 	padding:5px;
 	top:3rem;
+	font-weight: bolder;
 }
 
 #preamble1 p{
@@ -362,13 +365,12 @@ img{
 #preamble1 h5{
 	font-family: Book Antiqua, serif;
 	color:gray;
-	font-weight: bold;
+	font-weight: bolder;
+	font-size: 15px;
 }
 
-/* Card 1 */
-/* Card 1 */
-
-
+		/* Card 1 */
+		/* Card 1 */
 
 /* Logos */
 /* Logos */
@@ -431,8 +433,9 @@ img{
 /* Logos */
 
 
-/* Card 2 */
-/* Card 2 */
+
+		/* Card 2 */
+		/* Card 2 */
 
 .division2{
 	position: relative;
@@ -568,12 +571,11 @@ img{
     color:dodgerblue;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    background-color: white;
+    background-color: #d3d3d3;
     overflow: hidden;
     font-family: Book Antiqua, serif;
     font-weight: bolder;
     font-size: 20px;
-    background-color: rgb(235, 235, 235);
 
 	display: flex;
 	flex-direction: column;
@@ -612,6 +614,7 @@ img{
    width:100%;
    height:90vh;
    display: block;
+   top:2rem;
 }
 
 /* Background */
@@ -646,10 +649,12 @@ img{
 	width: 20%;
 	border-radius: 49%;
 	transform: translateX(9em);
-}
+	background-color:#fff;
+	margin-bottom: 10px;
+	padding:2px;
 
-.sorted img:nth-child(1){
-	border-radius: 45%;
+
+
 }
 
 .function{
@@ -660,8 +665,11 @@ img{
     justify-content: center;
     align-content: center;
     text-align: center;
-    bottom:24px;
+    bottom:40px;
+}
 
+.function:nth-child(2){
+	bottom:44px;
 }
 
 .caption{
@@ -677,7 +685,7 @@ img{
 }
 
 
-.caption p span {
+.caption p span{
 	color:red;
 }
 
@@ -685,9 +693,314 @@ img{
 /* Division 4 */
 
 
+/* Section 5 */
+/* Section 5 */
+
+.division5{
+	position: relative;
+	background-color:#fff;
+	width:100%;
+	height:130vh;
+	display: flex;
+	flex-direction: column;
+	flex-direction: wrap;
+	top:25rem;
+}
+
+.section5{
+	position:relative;
+	width:85%;
+	margin:auto;
+}
+
+#pic3 img{
+	width:100%;
+}
+
+.section5 #preamble3{
+	position: absolute;
+	box-sizing: border-box;
+	background-color: white;
+	border-top-right-radius: 14px;
+	border-bottom-right-radius: 14px;
+	text-align: center;
+	padding:2px;
+	top:4.4rem;
+}
+
+#preamble3 h4{
+	color:gray;
+}
+
+
+#preamble3 p{
+	font-family:Book Antiqua, serif;
+	font-size: 34px;
+	font-weight: bolder;
+	width:280px;
+	color:gray;
+	text-align: center;
+}
+
+/* Division 6 */
+/* Division 6 */
+
+.division6{
+	width:100%;
+	position: relative;
+	z-index: 2;
+	text-align: center;
+	top:20rem;
+	height:80vh;
+	background-color: rgb(230, 230, 230);
+}
+
+.section6{
+	position: relative;
+	display: block;
+	width:85%;
+	margin:auto;
+	top:2rem;
+}
+
+.title2{
+	color:gray;
+}
+
+.title2 h1{
+	font-weight: normal;
+}
+
+.category1{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap:5px;
+	text-align: center;
+}
+
+.ico1 img{
+	width: 100%;
+}
+
+.ico1{
+    color:#4070ff;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+    font-family: Book Antiqua, serif;
+    font-weight: bold;
+    font-size: 20px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.save1{
+	position: relative;
+	font-weight: bold;
+	font-size: 19px;
+	border: 2px red solid;
+	padding:1px;
+	text-align: center;
+	border-radius: 5px;
+	background-color: #fff;
+	color:red;
+	text-decoration: none;
+	transition:0.5s;
+	top:-0.8rem;
+	width:8rem;
+}
+
+.save1:hover{
+	border:2px rgb(245, 120, 120) solid;
+}
+
+/* Division 6 */
+/* Division 6 */
+
+/* Division 7 */
+/* Division 7 */
+
+.division7{
+	width:100%;
+	position: relative;
+	z-index: 2;
+	text-align: center;
+	top:20rem;
+	height:80vh;
+}
+
+.section7{
+	position: relative;
+	display: block;
+	width:85%;
+	margin:auto;
+	top:2rem;
+}
+
+.title2{
+	color:gray;
+}
+
+.title2 h1{
+	font-weight: normal;
+}
+
+.category2{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap:5px;
+	text-align: center;
+}
 
 
 
+.ico2{
+    color:black;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    overflow: hidden;
+    font-family: Book Antiqua, serif;
+    font-weight: bold;
+    font-size: 18px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.ico2 h3{
+	font-weight: bold;
+}
+
+.ico2 p .port1{
+	font-size: 15px;
+	font-weight: bold;
+	color:#4070ff;
+	text-decoration: none;
+}
+
+.ico2 p .port1:hover{
+	text-decoration: underline;
+	color:red;
+}
+
+.ico2 i{
+	font-size: 3.9rem;
+	color:gray;
+}
+
+.save2{
+	position: relative;
+	font-weight: bold;
+	font-size: 22px;
+	border: 2px red solid;
+	padding:9px;
+	text-align: center;
+	border-radius: 5px;
+	background-color: #fff;
+	color:red;
+	text-decoration: none;
+	transition:0.5s;
+	top:-2rem;
+}
+
+.save2:hover{
+	border:2px rgb(245, 120, 120) solid;
+}
+
+/* Division 7 */
+/* Division 7 */
 
 
 
+        /* Footer */
+       /* Footer */
+
+.footer{
+	width:100%;
+	margin-top: 3em;
+	padding:0px 0px;
+	border: 0.9px gray solid;
+	background-color:#d3d3d3;
+}
+
+.section8{
+	display: block;
+	width:100%;
+	text-align: left;
+	width:85%;
+	margin:auto;
+}
+
+/* Row-1 */
+
+.row-1{
+	display: inline-flex;
+	flex-direction: row;
+	flex-direction: wrap;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.copyright .fa-umbrella{
+	color:red;
+}
+
+.copyright p{
+	font-size: 13px;
+	font-weight:bold;
+	font-family: Book Antiqua, serif;
+
+}
+
+.social{
+	display:inline-flex;
+}
+
+.social .fab{
+	font-size: 1.8rem;
+	margin-left: 1.8rem;
+}
+
+/* Row-1 */
+
+/* Row-2 */
+
+.row-2{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.item h3{
+	text-align: left;
+}
+
+.item1 ul li{
+	list-style: none;
+	text-align: left;
+}
+
+.item1 ul li a{
+	text-decoration: none;
+	color:rgb(61, 96, 186);
+	font-weight: bold;
+	font-family: Book Antiqua,serif;
+}
+
+.item1 ul li a:hover{
+	text-decoration: underline;
+}
+
+/* Row-2 */
+
+/* Extra */
+
+.extra{
+	color:gray;
+	font-weight: normal;
+}
+
+			/* Footer */
+			/* Footer */
