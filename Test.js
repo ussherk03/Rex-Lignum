@@ -68,16 +68,6 @@ let maryAverage = z / 3;
 
 console.log(`John: ${johnAverage}`, `Mike: ${mikeAverage}`, `Mary: ${maryAverage}`);
 
-/*
-if (johnAverage === mikeAverage) {
-    console.log('There was a tie');
-} else if (johnAverage > mikeAverage) {
-    console.log('John won the game');
-} else {
-    console.log('Mike won the game');
-}
-*/
-
 
 switch (true) {
 
@@ -176,51 +166,55 @@ console.log(whatDoYouDo('teacher', 'John'));
 
 let restaurantCost = [124, 48, 268];
 
-// function tipCalculator(costs) {
-//     let allTips = new Array();
-//     let allAmounts = new Array();
+/*
 
-//     for (let i = 0; i <= costs.length; i++) {
-//         if (costs[i] < 50) {
-//             let tip = 0.2 * costs[i];
-//             allTips.push(tip);
-//             allAmounts.push(tip + costs[i]);
+function tipCalculator(costs) {
+    let allTips = new Array();
+    let allAmounts = new Array();
 
-//         } else if (costs[i] > 50 && costs[i] < 200) {
-//             let tip = 0.15 * costs[i];
-//             allTips.push(tip);
-//             allAmounts.push(tip + costs[i]);
+    for (let i = 0; i <= costs.length; i++) {
+        if (costs[i] < 50) {
+            let tip = 0.2 * costs[i];
+            allTips.push(tip);
+            allAmounts.push(tip + costs[i]);
 
-//         } else if (costs[i] > 200) {
-//             let tip = 0.1 * costs[i];
-//             allTips.push(tip);
-//             allAmounts.push(tip + costs[i]);
-//         }
-//     }
+        } else if (costs[i] > 50 && costs[i] < 200) {
+            let tip = 0.15 * costs[i];
+            allTips.push(tip);
+            allAmounts.push(tip + costs[i]);
 
-//     console.log(allTips, allAmounts);
-// }
+        } else if (costs[i] > 200) {
+            let tip = 0.1 * costs[i];
+            allTips.push(tip);
+            allAmounts.push(tip + costs[i]);
+        }
+    }
 
-function tipCalculator (costs) {
-    let allTips = new Array ();
-    let allAmounts = new Array ();
+    console.log(allTips, allAmounts);
+}
+
+*/
+
+function tipCalculator(costs) {
+    let allTips = new Array();
+    let allAmounts = new Array();
     tip = null;
 
     for (let i = 0; i <= costs.length; i++) {
-        
+
         switch (true) {
             case costs[i] < 50:
                 tip = 0.2 * costs[i];
                 allTips.push(tip);
                 allAmounts.push(tip + costs[i]);
                 break;
-            
+
             case costs[i] > 50 && costs[i] < 200:
                 tip = 0.15 * costs[i];
                 allTips.push(tip);
-                allAmounts.push(tip + costs[i]); 
-                break; 
-                
+                allAmounts.push(tip + costs[i]);
+                break;
+
             case costs[i] > 200:
                 tip = 0.1 * costs[i];
                 allTips.push(tip);
@@ -228,7 +222,6 @@ function tipCalculator (costs) {
                 break;
 
             default:
-                console.log('Welcome');
                 break;
         }
     }
@@ -236,15 +229,13 @@ function tipCalculator (costs) {
     console.log(allTips, allAmounts);
 }
 
-
 tipCalculator(restaurantCost);
 
 
-// Object literals
 
+// Object literals -- "new Object ()" Syntax
 
-// "new Object ()" Syntax
-var Jane = new Object ();
+var Jane = new Object();
 Jane.name = 'Jane McDonald';
 Jane.birthYear = 1995;
 
@@ -289,22 +280,22 @@ console.log(John.calcAge()); // A typical method
 
 // Remember: BMI = mass / height ** 2. NB mass in kilograms and height in meters).
 
-let  Reginald = {
-    fullName : 'Reginald Claw',
-    mass : 56,
-    height : 1.23,
+let Reginald = {
+    fullName: 'Reginald Claw',
+    mass: 56,
+    height: 1.23,
 
-    BMI : function () {
+    BMI: function () {
         return this.mass / (this.height) ** 2;
     }
 }
 
 let Dudley = {
-    fullName : 'Dudley Bell',
-    mass : 79,
+    fullName: 'Dudley Bell',
+    mass: 79,
     height: 2.13,
 
-    BMI : function () {
+    BMI: function () {
         return this.mass / (this.height) ** 2;
     }
 
@@ -314,13 +305,13 @@ console.log(Reginald.BMI());
 console.log(Dudley.BMI());
 
 // Compare the BMI to know which is the greatest
-function compareBMI (a, b) {
+function compareBMI(a, b) {
 
     switch (true) {
         case a.BMI() > b.BMI():
             console.log(`${a.fullName} has the highest BMI of ${a.BMI()}`);
             break;
-        
+
         case a.BMI() < b.BMI():
             console.log(`${b.fullName} has the highest BMI of ${b.BMI()}`);
             break;
@@ -328,13 +319,157 @@ function compareBMI (a, b) {
         default:
             console.log('Both BMIs are equal.')
     }
-    
+
 }
 
 compareBMI(Reginald, Dudley);
 
 
-// Loops and Iteration
+
+
+// Coding Challenge 4
+
+/* 
+
+John and his family went to 5 different restaurants. The bills were $124, $48, $268, $180 and $42. 
+John likes to tip 20% of the bill when the bill is less than $50, 15% when the bill is between  $50 and $200, and 
+10%  if the bill is more than $200.
+
+Implement a tip calculator using objects and loops:
+1. Create an object with an array for the bill values.
+2. Add a method to calculate the tip
+3. This method should include a loop to iterate over all the paid the bill and do the tip calculations
+4. As an output, create 1) a new array containing all tips, and 2) an array containing final paid
+amounts (bill + tip). HINT: Start with two empty arrays[] as properties and then fill them in the loop.
+
+EXTRA AFTER FINISHING: Mark's family also went on a holiday, going to 4 different restaurants. The bills were
+$77, $375, $110, and $45.
+Mark likes to tip 20% of the bill when the bill is less than $100, 10%. when the bill is between $100 and $300 (different than John), and 
+25%  for any amount below $100.
+5. Implement the same functionality as before, this time using Mark's tipping rules
+6. Create a function (not a method) to calculate the average of a given array of tips. 
+HINT: loop over the array, and in each iteration store the current  sum in a variable (starting from zero). 
+After you have the sum of the array, divide it by the number of elements in it (that's how you calculate the average).
+
+7. Calculate the average tip for each family.
+8. Log to the console which family paid the highest tips on average.
+
+*/
+
+
+//  Solution 
+
+
+var MarkFamily = {
+    restaurantCosts: [77, 475, 110, 45],
+
+    costs: function () {
+
+        var eachTip = [];
+        var everyAmount = [];
+
+        for (i = 0; i < this.restaurantCosts[i]; i++) {
+
+            var percentage;
+            var a = this.restaurantCosts[i];
+
+
+            switch (true) {
+                case a < 100:
+                    percentage = .2;
+                    break;
+
+                case a >= 100 && a < 300:
+                    percentage = .1;
+                    break;
+
+                default:
+                    percentage = .25;
+            }
+
+            eachTip[i] = a * percentage;
+            everyAmount[i] = eachTip[i] + a;
+        }
+
+        return eachTip;
+    }
+}
+
+console.log(MarkFamily.costs());
+
+var JohnFamily = {
+    cafebills: [124, 48, 268, 180, 42],
+
+    johnCosts: function () {
+        this.cafeTip = [];
+        this.cafeAmount = [];
+
+        for (var k = 0; k < this.cafebills.length; k++) {
+
+            var realCost = this.cafebills[k];
+
+            switch (true) {
+                case realCost < 50:
+                    var fractions = 0.2;
+                    break;
+
+                case realCost >= 50 && realCost <= 200:
+                    fractions = 0.15;
+                    break;
+
+                default:
+                    break;
+            }
+
+            this.cafeTip[k] = fractions * realCost;
+            this.cafeAmount[k] = this.cafeTip[k] + realCost;
+        }
+
+        return this.cafeTip;
+    }
+}
+
+console.log(JohnFamily.johnCosts());
+
+
+function compareAverageTip(tip_array1, tip_array2) {
+
+    let bigArray = [tip_array1, tip_array2]
+    let box = [];
+
+    for (var k = 0; k < bigArray.length; k++) {
+        let totalSum = 0;
+
+        for (var t = 0; t < bigArray[k].length; t++) {
+            totalSum = totalSum + bigArray[k][t];
+        }
+
+        let average = totalSum / bigArray[k].length;
+        box.push(average);
+    }
+
+
+    for (var l = 0; l < box.length; l++) {
+
+        switch(true) {
+            case box[0] > box[1]:
+                return `John\'s family has the highest tipping percentage with $${box[0]}`;
+
+            case box[0] < box[1]:
+                return `Mike\'s family has the highest tipping percentage with $${box[1]}.`;
+
+            default:
+                return `Both families has equal tipping percentage.`;
+        }
+    }
+}
+
+console.log(compareAverageTip(JohnFamily.johnCosts(), MarkFamily.costs()));
+
+
+
+
+
 
 
 
