@@ -916,68 +916,136 @@ the game if the score (Hint: Use the power of closures: this ain't mandatory).
 ////////////////////////////////////////////////////////////////
 //////////////////////////////Solution
 
-// (function () {
-//     function Question (question, choices, correctAnswer) {
-//         this.question = question,
-//         this.choices = choices,
-//         this.correctAnswer = correctAnswer,
+/* function () {
+    function Question (question, choices, correctAnswer) {
+        this.question = question,
+        this.choices = choices,
+        this.correctAnswer = correctAnswer,
 
-//         Question.prototype.questionAndChoices = function () {
-//             // Display question    
-//             console.log(this.question);
-//             for (let i = 0; i < this.choices.length; i++) {
-//                 console.log(this.choices[i]);
-//             }
-//         }
+        Question.prototype.questionAndChoices = function () {
+            // Display question    
+            console.log(this.question);
+            for (let i = 0; i < this.choices.length; i++) {
+                console.log(this.choices[i]);
+            }
+        }
 
-//         Question.prototype.checkScore = function () {
-//             // Do stuff
-//         }
-//     }
+        Question.prototype.checkScore = function () {
+            // Do stuff
+        }
+    }
 
-//     // Create instances from Question
-//     q1 = new Question (
-//         'Who is Rex?',
-//         [ '0: A Good Guy', '1: A Bad Guy', '2: Don\'t Know' ], 1
-//     )
+    // Create instances from Question
+    q1 = new Question (
+        'Who is Rex?',
+        [ '0: A Good Guy', '1: A Bad Guy', '2: Don\'t Know' ], 1
+    )
 
-//     q2 = new Question (
-//         'What is the largest fish ?',
-//         [ '0: Tiger Shark', '1: Hermit Crab', '2: Blue Whale'], 2
-//     )
+    q2 = new Question (
+        'What is the largest fish ?',
+        [ '0: Tiger Shark', '1: Hermit Crab', '2: Blue Whale'], 2
+    )
 
-//     q3 = new Question (
-//         'Which country is also called Mesopotamia?',
-//         ['0: Kyrgyzstan', '1: Iceland', '2: Iran'], 2
-//     )
-//     // Store questions in an array
-//     let arrayQ = [q1, q2, q3];
+    q3 = new Question (
+        'Which country is also called Mesopotamia?',
+        ['0: Kyrgyzstan', '1: Iceland', '2: Iran'], 2
+    )
+    // Store questions in an array
+    let arrayQ = [q1, q2, q3];
     
-//     // Log random question with choices and check choices & log judgement: if answer is correct or not
-//     function promptCheck () {
-//         a = arrayQ [Math.round(Math.random() * 2)];
-//         b = a.questionAndChoices();
-//         promptAnswer = prompt('Enter the number of the choices below');
+    // Log random question with choices and check choices & log judgement: if answer is correct or not
+    function promptCheck () {
+        a = arrayQ [Math.round(Math.random() * 2)];
+        b = a.questionAndChoices();
+        promptAnswer = prompt('Enter the number of the choices below');
         
-//         if (promptAnswer !== 'exit') {
-//             if (promptAnswer == a.correctAnswer) {
-//                 console.log('CORRECT ANSWER!');
-//                 console.log(scorebox());
-//                 promptCheck();
+        if (promptAnswer !== 'exit') {
+            if (promptAnswer == a.correctAnswer) {
+                console.log('CORRECT ANSWER!');
+                promptCheck();
 
-//             } else if (promptAnswer !== a.correctAnswer) {
-//                 console.log('INCORRECT ANSWER!');
-//                 promptCheck();
-//             }
-//         } else {
+            } else {
+                console.log('INCORRECT ANSWER!');
+                promptCheck();
+            }
+        } else {
 
-//         }
-//     } 
-//     promptCheck();
-// }) ();
+        }
+    } 
+    promptCheck();
+}) ();
+
+*/
+
+// Type "exit" in prompt box to stop quiz
 
 /////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////// Solution
+
+
+
+// BlOCKS AND IMMEDIATELY INVOKED FUNCTIONS
+
+{
+    const a = 21;
+    let b = 2;
+    let c = 9;
+    
+    console.log(a + b);
+
+}
+
+// Templates (Use of Backticks)
+let city = 'Ghana';
+console.log(`I come from ${city}`);
+country = 'Saudi Arabia';
+capital = 'Riyadh';
+
+const n = `${country}, ${capital}`
+console.log(n)
+console.log(n.startsWith('s'));
+console.log(n.endsWith('j'));
+console.log(n.includes('@'));
+
+
+// Arrow Functions
+
+const times = [1990, 1945, 1976, 1982];
+
+
+    // In ES5
+var currentAge = years.map(function(elem) {
+    return 2020 - elem;
+});
+console.log(currentAge);
+
+    // In ES6
+
+let ageS = years.map(el => 2019 - el);
+console.log(ageS);
+
+ageX = years.map( (item, index) => `Age element ${index + 1}: 
+${2016 - item}.`);
+console.log(ageS);
+
+ageY = years.map((item, index) => {
+    const now = new
+    Date().getFullYear();
+    const ageCurrent = now - item; 
+    return `Age element ${index + 1}: ${ageCurrent}.`
+})
+
+console.log(ageY);
+
+
+
+
+
+
+
+
+
+
 
 
 
