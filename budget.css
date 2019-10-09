@@ -1,0 +1,160 @@
+body {
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+body .top {
+  position: relative;
+  background-image: linear-gradient(to left, rgba(245, 245, 245, 0.7), rgba(0, 0, 0, 0) 10%), url("../../IMAGES/Fedora.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  height: 55vh;
+}
+body .top .budget {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+body .top .budget__value {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 1rem 1rem 1.5rem 1rem;
+  color: lightgrey;
+  border-bottom: 2px #999 solid;
+}
+body .top .budget__title {
+  font-family: Alegreya, sans-serif;
+  font-size: 2.5rem;
+  margin: 2rem;
+  color: coral;
+}
+body .top .budget__title--month {
+  color: #00cde6;
+}
+body .top .budget__income {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(30, 144, 255, 0.75);
+  padding: 0.5rem 0 0.5rem 0;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+}
+body .top .budget__income--text {
+  color: white;
+  font-family: Alegreya, sans-serif;
+  font-size: 1.5rem;
+}
+body .top .budget__income--percentage {
+  margin-left: 1rem;
+  background-color: #0583ff;
+  color: #e0e0e0;
+  font-weight: 600;
+  padding: 0.5rem;
+  border: 1px #000 solid;
+  border-radius: 9px;
+}
+body .top .budget__income--value {
+  font-family: Helvetica, serif;
+  font-weight: 600;
+}
+body .top .budget__income .right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+}
+body .top .budget__expenses {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(220, 20, 60, 0.75);
+  padding: 0.5rem;
+  border-radius: 12px;
+  transform: translateX(4rem);
+}
+body .top .budget__expenses--text {
+  color: white;
+  font-family: Alegreya, sans-serif;
+  font-size: 1.5rem;
+}
+body .top .budget__expenses--percentage {
+  margin-left: 1rem;
+  color: #e0e0e0;
+  font-weight: 600;
+  padding: 0.5rem;
+  border: 1px #000 solid;
+  border-radius: 9px;
+  background-color: #ad102f;
+}
+body .top .budget__expenses--value {
+  font-family: Helvetica, sans-serif;
+  font-weight: 600;
+}
+body .top .budget__expenses .right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+}
+body .bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .bottom .add {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(211, 211, 211, 0.7);
+  width: 100%;
+  padding: 1rem;
+  box-shadow: 2px 2px 2px #999;
+}
+body .bottom .add__type {
+  padding: 0.6rem;
+  outline: none;
+}
+body .bottom .add__type option {
+  border-radius: 29px;
+  font-size: x-large;
+}
+body .bottom .add__btn {
+  font-size: 2rem;
+  display: inline-block;
+  transform: translateY(0.3rem);
+  color: #333333;
+  transition: 0.5s all;
+}
+body .bottom .add__btn:hover {
+  color: black;
+}
+body .bottom .add__description ::-webkit-input-placeholder {
+  font-family: "Roboto Condensed", Arial, Helvetica, serif;
+  color: black;
+  font-weight: 900;
+}
+body .bottom .add__description, body .bottom .add__value {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: medium;
+  padding: 0.8rem;
+  border-radius: 9px;
+  outline: none;
+  border: none;
+}
+body .bottom .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50rem;
+}
+
+/*# sourceMappingURL=budget.css.map */

@@ -1,0 +1,189 @@
+
+@mixin align($direction, $pos-1, $pos-2) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $pos-1;
+  align-items: $pos-2;
+}
+
+@mixin bgPosition ($position, $cover) {
+  background-position: $position;
+  background-repeat: no-repeat;
+  height: $cover;
+}
+
+@mixin grid ($colNum, $colSize, $gap) {
+  display: grid;
+  grid-template-columns: repeat($colNum, $colSize);
+  grid-gap: $gap;
+}
+
+$turk: rgb(0, 205, 230);
+$grey : lightgrey;
+$crimson: crimson;
+$dodger: dodgerblue;
+$black: black;
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+
+  & .top {
+    position: relative;
+    background-image: linear-gradient(to left, rgba(245, 245, 245, 0.7), rgb(0, 0, 0, 0) 10%), url("../../IMAGES/Fedora.jpg");
+    @include bgPosition(left, 55vh);
+
+    & .budget {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+
+      &__value {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 2.4rem;
+        font-weight: 600;
+        margin: 1rem 1rem 1.5rem 1rem;
+        color: $grey;
+        border-bottom: 2px #999 solid;
+      }
+
+      &__title {
+        font-family: Alegreya, sans-serif;
+        font-size: 2.5rem;
+        margin: 2rem;
+        color: coral;
+
+        &--month {
+          color: $turk;
+        }
+      }
+
+      &__income {
+        @include align(row, space-around, center);
+
+        background-color: rgba(dodgerblue, 0.75);
+        padding: 0.5rem 0 0.5rem 0;
+        margin-bottom: 1rem;
+        border-radius: 12px;
+
+        &--text {
+          color: white;
+          font-family: Alegreya, sans-serif;
+          font-size: 1.5rem;
+        }
+
+        &--percentage {
+          margin-left: 1rem;
+          background-color: darken($dodger, 5);
+          color: lighten($grey, 5);
+          font-weight: 600;
+          padding: 0.5rem;
+          border: 1px #000 solid;
+          border-radius: 9px;
+        }
+
+        &--value {
+          font-family: Helvetica, serif;
+          font-weight: 600;
+        }
+
+        & .right {
+          @include align(row, center, center);
+          margin-left: 2rem;
+        }
+      }
+
+      &__expenses {
+        @include align(row, space-around, center);
+
+        background-color: rgba(crimson, 0.75);
+        padding: 0.5rem;
+        border-radius: 12px;
+        transform: translateX(4rem);
+
+        &--text {
+          color: white;
+          font-family: Alegreya, sans-serif;
+          font-size: 1.5rem;
+        }
+
+        &--percentage {
+          margin-left: 1rem;
+          color: lighten($grey, 5);
+          font-weight: 600;
+          padding: 0.5rem;
+          border: 1px #000 solid;
+          border-radius: 9px;
+          background-color: darken($crimson, 10);
+        }
+
+        &--value {
+          font-family: Helvetica, sans-serif;
+          font-weight: 600;
+        }
+
+        & .right {
+          @include align(row, center, center);
+          margin-left: 2rem;
+        }
+      }
+    }
+
+
+  }
+
+  & .bottom {
+    @include align(column, center, center);
+
+    & .add {
+      @include align(column, center, center);
+      background-color: rgba($grey, 0.7);
+      width: 100%;
+      padding: 1rem;
+      box-shadow: 2px 2px 2px #999;
+
+      &__type {
+        padding: 0.6rem;
+        outline: none;
+
+        option {
+          border-radius: 29px;
+          font-size: x-large;
+        }
+      }
+
+      &__btn {
+        font-size: 2rem;
+        display: inline-block;
+        transform: translateY(0.3rem);
+        color: lighten($black, 20);
+        transition: 0.5s all;
+      }
+
+      &__btn:hover {
+        color: darken($black, 0);
+      }
+
+      &__description ::-webkit-input-placeholder {
+        font-family: "Roboto Condensed", Arial, Helvetica, serif;
+        color: $black;
+        font-weight: 900;
+      }
+
+      &__description, &__value {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: medium;
+        padding: 0.8rem;
+        border-radius: 9px;
+        outline: none;
+        border: none;
+      }
+    }
+    & .container {
+      @include grid(2, 1fr, 50rem);
+    }
+  }
+}
