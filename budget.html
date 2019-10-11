@@ -38,13 +38,16 @@
 <div class="bottom">
     <div class="add">
         <div class="add__container">
-            <select class="add__type">
-                <option value="inc" selected>+</option>
-                <option value="exp">-</option>
-            </select>
+            <div class="operation">
+                <div class="add__type">
+                    <div class="inc fa fa-plus-circle green"></div>
+                    <div class="exp fa fa-minus-circle"></div>
+                </div>
+            </div>
+
             <input type="text" class="add__description" placeholder="Add description" size="30">
             <input type="number" class="add__value" placeholder="Value" size="4">
-            <a href="" class="add__btn"><i class="fas fa-plus-circle"></i></a>
+            <a href="#" class="add__btn"><i class="fa fa-calculator"></i></a>
         </div>
     </div>
 
@@ -119,6 +122,6 @@
 
 </div>
 
-<script src="budgetApp.js"></script>
+<!--<script src="budgetApp.js"></script>-->
 </body>
 </html>
